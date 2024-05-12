@@ -346,9 +346,49 @@ form button {
     }
 }
 
+
+
+
+
 @media only screen and (max-width: 400px) {
     #header {
         font-size: 1.5rem;
+    }
+
+    #title {
+        animation: 
+            animated-text 3.5s steps(16,end) 0.5s 1 normal both,
+            animated-cursor 750ms steps(16,end) infinite;
+        max-width: 255px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    form {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    form input {
+        border-radius: 17px;
+    }
+
+    form button {
+        border-radius: 15px;
+        margin-top: 15px;
+        width: 50%;
+    }
+    form > button.light-button {
+        box-shadow: 0 0 5px lightgray;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 430px) {
+    #header {
+        font-size: 1.3rem;
     }
 
     #title {
